@@ -29,10 +29,10 @@ export default function Header() {
             ) : (
               // 기존 메인 홈 전용 섹션 링크 완벽 보존
               <>
-                <a href="#about" className="text-dark/80 hover:text-accent transition-colors">
+                <a href="#/" className="text-dark/80 hover:text-accent transition-colors">
                   About
                 </a>
-                <a href="#program" className="text-dark/80 hover:text-accent transition-colors">
+                <a href="#/" className="text-dark/80 hover:text-accent transition-colors">
                   Program
                 </a>
                 <a href="#/survey" className="bg-dark text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity">
