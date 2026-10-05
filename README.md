@@ -1,5 +1,14 @@
 # React + Vite
 
+## 배포
+
+`main` 브랜치에 푸시하면 GitHub Actions가 GitHub Pages로 자동 배포합니다.
+
+1. GitHub 저장소의 **Settings > Pages**에서 Source를 **GitHub Actions**로 선택합니다.
+2. 최초 배포가 끝나면 `https://poinring.github.io/juns-corner/`에서 홈페이지를 확인합니다.
+
+현재 설문 폼은 브라우저에서 입력을 확인하는 데모이며 이름과 연락처를 외부 서버로 전송하지 않습니다. 실제 상담 접수를 시작하기 전에는 개인정보처리방침, 보관 기간, 접근 권한을 정하고 HTTPS를 지원하는 서버리스 폼 또는 백엔드로 연결해야 합니다.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

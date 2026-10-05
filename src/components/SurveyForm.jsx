@@ -69,7 +69,6 @@ export default function SurveyForm() {
   // 최종 폼 제출 핸들러
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('최종 설문 데이터 제출:', formData);
     alert(`설문해 주셔서 감사합니다, ${formData.name}님! 준코너가 확인 후 곧 연락드릴게요. 🔥`);
   };
 
@@ -119,6 +118,8 @@ export default function SurveyForm() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="홍길동"
+                      autoComplete="name"
+                      maxLength={50}
                       required
                       className="w-full px-4 py-3 bg-white border border-dark/10 rounded-xl focus:border-accent outline-none transition text-base"
                     />
@@ -131,6 +132,9 @@ export default function SurveyForm() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="010-1234-5678"
+                      autoComplete="tel"
+                      inputMode="tel"
+                      maxLength={20}
                       required
                       className="w-full px-4 py-3 bg-white border border-dark/10 rounded-xl focus:border-accent outline-none transition text-base"
                     />
@@ -269,6 +273,7 @@ export default function SurveyForm() {
                       name="injuryOrBody"
                       value={formData.injuryOrBody}
                       onChange={handleChange}
+                      maxLength={500}
                       placeholder="예: 오른쪽 손목이 가끔 시려요, 체력이 많이 부족해요 등"
                       rows="2"
                       className="w-full px-4 py-3 bg-white border border-dark/10 rounded-xl focus:border-accent outline-none transition text-base resize-none"
@@ -283,6 +288,7 @@ export default function SurveyForm() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
+                      maxLength={500}
                       placeholder="예: 스텝 위주로 제대로 배워보고 싶어요! 복싱 용품은 대여가 되나요? 등"
                       rows="2"
                       className="w-full px-4 py-3 bg-white border border-dark/10 rounded-xl focus:border-accent outline-none transition text-base resize-none"

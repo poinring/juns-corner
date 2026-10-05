@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import About from './components/About';
 import Program from './components/program';
@@ -25,7 +25,7 @@ function LandingPage() {
               복싱이 처음이어도 괜찮아요. <br className="hidden md:block" /> 샌드백 두드리는 35분이면, 일상에 <br className="hidden md:block" /> 은은한 활력이 생기거든요.
             </p>
             <a
-              href="/survey"
+              href="#/survey"
               className="inline-block bg-accent text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity text-lg"
             >
               시작하기
